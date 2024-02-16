@@ -6,5 +6,5 @@
 #
 
 board: [rpi_pico]
-shield: [lyra42]
+shield: [lyra34]
 
