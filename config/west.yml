@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: jibingeo
+      url-base: https://github.com/jibingeo
+  projects:
+    - name: zmk
+      remote: jibingeo
+      revision: trackpad
+      import: app/west.yml
+  self:
+    path: config

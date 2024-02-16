@@ -1,0 +1,8 @@
+file_format: "1"
+id: lyra34
+name: Lyra34
+type: shield
+url: https://github.com/jibineo/zmk-config-lyra34
+requires: [rpi_pico]
+features:
+  - keys
