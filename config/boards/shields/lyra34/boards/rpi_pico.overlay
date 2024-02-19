@@ -1,0 +1,21 @@
+&pinctrl {
+	i2c0_default: i2c0_default {
+		group1 {
+			pinmux = <I2C0_SDA_P0>, <I2C0_SCL_P1>;
+			input-enable;
+			input-schmitt-enable;
+		};
+	};
+};
+
+&uart0 {
+  status = "disabled";
+};
+
+&i2c0 {
+	pinctrl-0 = <&i2c0_default>;
+	status = "okay";
+	trackpad: trackpad@74 {
+        dr-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+	};
+};
