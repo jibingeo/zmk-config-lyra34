@@ -21,7 +21,6 @@
         behaviors {
             mhp: behavior_mo_tap {
                 compatible = "zmk,behavior-hold-tap";
-                label = "mo_tog";
                 #binding-cells = <2>;
                 flavor = "hold-preferred";
                 tapping-term-ms = <200>;
@@ -84,10 +83,8 @@
 
         keymap {
                 compatible = "zmk,keymap";
-		            label = "Zerosprey42";
 		
                 default_layer {
-                label = "Default";
                 	bindings = <
 
    &mhp 1 TAB    &kp W  &kp E  &kp R  &kp T           &kp Y   &kp U  &kp I    &kp O    &mhp 1 BSPC     
@@ -98,7 +95,6 @@
                 };
 
                 first_later {
-                label = "First";
                 	bindings = <
    &kp BSPC   &mhp 2 AT  &kp HASH  &kp DLLR   &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR   &mhp 2 EXCL  &kp BSPC
    &kp LBRC   &kp LBKT   &kp LPAR  &kp LT     &kp COLON  &kp MINUS  &kp EQUAL &kp SQT    &kp DQT      &kp FSLH
@@ -107,7 +103,6 @@
                          >;
                 };
                 second_later {
-                label = "Second";
                 	bindings = <
    &trans    &none     &none     &none   &none   &none   &kp N7  &kp N8  &kp N9  &trans 
    &kp RBRC  &kp RBKT  &kp RPAR  &kp GT  &none   &none   &kp N4  &kp N5  &kp N6  &kp N0 
@@ -117,7 +112,6 @@
                 };
 
                 third_later {
-                label = "Third";
                 	bindings = <
    &none       &none        &none       &none        &none     &none     &none      &none      &none      &none   
    &none       &none        &none       &none        &none     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  

@@ -1,4 +1,21 @@
+/ {
+	chosen {
+		zephyr,console = &uart0;
+	};
+
+};
+
+
 &pinctrl {
+	uart0_default: uart0_default {
+		group1 {
+			pinmux = <UART0_TX_P16>;
+		};
+		group2 {
+			pinmux = <UART0_RX_P17>;
+			input-enable;
+		};
+	};
 	i2c0_default: i2c0_default {
 		group1 {
 			pinmux = <I2C0_SDA_P0>, <I2C0_SCL_P1>;
@@ -6,10 +23,6 @@
 			input-schmitt-enable;
 		};
 	};
-};
-
-&uart0 {
-  status = "disabled";
 };
 
 &i2c0 {
